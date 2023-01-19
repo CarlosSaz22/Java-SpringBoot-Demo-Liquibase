@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="03" author="Carlos">
+        <comment>Insertando libros</comment>
+        <insert tableName="libros">
+            <column name="id" valueNumeric="1"/>
+            <column name="nombre" value="Tierra de infancia"/>
+            <column name="autor" valueNumeric="01"/>
+            <column name="isbn" value="0-7645-2641-3"/>
+        </insert>
+        <insert tableName="libros">
+            <column name="id" valueNumeric="2"/>
+            <column name="nombre" value="Poesia"/>
+            <column name="autor" valueNumeric="02"/>
+            <column name="isbn" value="0-7645-2641-2"/>
+        </insert>
+        <insert tableName="libros">
+            <column name="id" valueNumeric="3"/>
+            <column name="nombre" value="Doce cuentos peregrinos"/>
+            <column name="autor" valueNumeric="03"/>
+            <column name="isbn" value="0-7645-2641-1"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

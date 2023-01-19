@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/crear-tablas-libro-y-autor.xml
+  - include:
+      file: db/changelog/insertar-datos-autor.xml
+  - include:
+      file: db/changelog/insertar-datos-libros.xml
